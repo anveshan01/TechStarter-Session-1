@@ -1,37 +1,266 @@
-.btn {
-    /* color: beige; */
-    /* background-color: black; */
-    margin-right: 8px;
-    border: 0px solid black;
-    background-color: white;
+
+body {
+    color: #444;
+    font-family: "Inter", serif;
 }
 
-body{
+.text-center {
     text-align: center;
 }
 
-.signupbtn{
-    background-color: blue;
-    color: wheat;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+.btn {
+    background-color: white;
+    color: #777;
+    font-size: medium;
+    font-weight: 500;
+    margin-right: 30px;
+    border: 0px solid;
 }
 
-.signupbtn:hover {
-    background-color: black;
+.btn:hover {
+    cursor: pointer;
+    color: #387ed1;
+}
+
+.signup_btn {
+    border-radius: 3px;
+    background-color: #387ed1;
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-weight: 600;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0px solid;
+    margin-top: 30px;
+}
+
+.signup_btn:hover {
+    cursor: pointer;
+    background-color: #444;
 }
 
 .img1{
     margin-top: 30px;
 }
 
-/* .icon{
-
-} */
-
-.nav{
+.nav {
+    position: fixed;
+    top: 0px;
     display: flex;
+    height: 70px;
+    width: 100%;
+    gap: 14%;
     justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+.nav > div {
+    display: flex;
+    align-items: center;
+}
+
+.img-block {
+    display: block;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+h4 {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+
+.intro-heading {
+    font-size: 48px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.intro-para {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.content-container {
+    display: flex;
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-top: 100px;
+    max-width: 72%;
+    justify-content: space-between;
+}
+
+.content-paras {
+    text-align: left;
+    font-weight: 400;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1px;
+}
+
+.product-demo {
+    display: flex;
+    margin-left: 40px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.blue-bold {
+    text-decoration: none;
+    font-weight: 500;
+    color: #387ed1;
+}
+
+.product-demo a {
+    margin-left: 20px;
+}
+
+.img3 {
+    margin-top: 30px;
+}
+
+.container-pricing {
+    display: flex;
+    width: 1000px;
+    height: 170px;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.text-pricing {
+    font-size: x-small;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.text-pricing:nth-of-type(-n + 2) {
+    margin-left: -20px;
+    margin-right: 5px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.img4 {
+    margin-right: 140px;
+}
+
+.open-acc-heading {
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.links-container {
+    display: flex;
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.socials {
+    display: flex;
+    width: 240px;
+    margin-top: 28px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.socials > p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #777;
+    font-size: smaller;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    margin-right: 60px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.fa {
+    text-decoration: none;
+    color: #777
+}
+
+.fa:hover {
+    color:#387ed1
+}
+
+.links-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 60px;
+}
+
+.btn2 {
+    background-color: white;
+    color: #777;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-left: -7px;
+    border: 0px solid;
+}
+
+.btn2:hover {
+    cursor: pointer;
+    color: #387ed1;
+}
+
+.legal-text {
+    margin-left: 14%;
+    margin-right: 14%;
+    font-size: x-small;
+    color: #999;
+    line-height: 20px;
+}
+
+.footer-container {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 10px;
+    justify-content: space-around;
+}
+
+.footer-btn {
+    background-color: white;
+    color: #a9a9a9;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-right: 10px;
+    border: 0px solid;
+}
+
+.footer-btn:hover {
+    cursor: pointer;
+    color: #387ed1;
 }
